@@ -1,0 +1,23 @@
+[project]
+name = "server3-template"
+version = "0.2.0"
+description = "AutoBangumi Server酱³ 新集数海报与 Markdown 模板通知"
+requires-python = ">=3.14"
+dependencies = [
+    "autobangumi-sdk==0.6.0",
+    "httpx2>=2.15,<3",
+    "pydantic>=2.0.0,<3",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0.0,<10"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+autobangumi-sdk = { url = "https://github.com/EstrellaXD/Auto_Bangumi/releases/download/4.0.0/autobangumi_sdk-0.6.0-py3-none-any.whl" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,10 @@
+[plugin]
+id = "server3-template"
+name = "Server酱³ 通知模板"
+version = "0.2.0"
+sdk = ">=0.5,<1"
+entry = "server3_template:Server3TemplatePlugin"
+description = "Server酱³ 新集数海报与 Markdown 模板通知，并支持系统事件模板"
+authors = ["local"]
+permissions = ["network"]
+extension_points = ["notifier", "message_template"]
