@@ -1,0 +1,25 @@
+# 本地开发环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+
+# 生成的安装包与构建文件
+dist/
+build/
+*.egg-info/
+
+# 本地凭据、宿主配置及编辑器文件
+.env
+.env.*
+!.env.example
+config.json
+config_dev.json
+plugin-data/
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
